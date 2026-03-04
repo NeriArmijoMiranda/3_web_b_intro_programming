@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+    color:aliceblue;
+}
+
+#miParrafo{ color:blueviolet;
+}
+.p{
+    color:aqua;
+}
+
+p{
+    color: orange !important;;
+}
+
+h1{
+    font-family:corben, monserrat;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/* Ejemplo position */
+/* Fixed es para que el elemento tenga una posición quieta en la pantala*/
+.parent{
+    background-color: rgb(211, 114, 198);
+    width: 400px;
+    height: 300px;
+    border: 5px solid white;
+    border-radius: 15px;
+    position: relative;
+}
+/* Si el padre es "relative" el hijo tiene que ser posición "absolute"*/
+.parent h1{
+    position:absolute;
+    font-size: 3.5rem;
+    left:10px;
+    bottom:20%;
+    z-index: 2;
+}
+/* El z-index es como poner los elementos por capas*/
+.parent img{
+    position: absolute;
+}
+
+.orange{
+    position: absolute;
+    right:0;
+    top:5%;
+    bottom:10%;
+    z-index: 1;
+}
+
+.orange2{
+    bottom:1%;
+    left:5%;
+    z-index: 3;
+    transform: rotate(-32deg);
+}
